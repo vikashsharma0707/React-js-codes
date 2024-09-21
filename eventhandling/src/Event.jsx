@@ -20,8 +20,16 @@ Correct: onClick={handledata} passes the function as a reference to be called wh
 // This is second method by making function
 const Event=()=>{
 
-  const handledata=()=>{
+  const handledata=(event)=>{
+    console.log(event)
+    console.log(event.target)
+    console.log(event.value)
      alert("This is event handling");
+  }
+
+// backtick is used to make the variable dynamic
+  const handle=(user)=>{
+      console.log(`welcom to ${user} class`)
   }
 
   
@@ -29,6 +37,12 @@ const Event=()=>{
     return(
         <>
         <button onClick={handledata}>Click here to see the alert message </button>
+        <br/><br/>
+        <button onClick={(event)=>{handledata(event)}}>Click here to see the alert message </button>
+        <br/><br/>
+
+         {/* pass the argumenet and parameter with the help of arrow function */}
+        <button onClick={()=>{handle("react js")}}>Click here</button>
         </>
     )
 }
