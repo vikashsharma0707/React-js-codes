@@ -12,13 +12,9 @@ const App=()=>{
         <h4>{key.rating}</h4>
         <p>{key.discription}</p>
         <a href={key.watch} ><button>Watch now</button></a>
-        
         </>
-
     )
-
  })
-
     return(
         <>
 

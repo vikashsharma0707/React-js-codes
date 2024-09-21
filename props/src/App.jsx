@@ -2,6 +2,8 @@ import Hello from "./Components/Hello";
 import Destructuring from "./Components/Destructuring";
 import Arrayprops from "./Components/Arrayprops";
 import Arrayvalue from "./Components/Arrayvalue";
+import Arrayrendering from "./Components/Arrayrendering";
+import Arrayobject from "./Components/Arrayobject";
 
 
 const App=()=>{
@@ -24,6 +26,11 @@ const App=()=>{
     <Arrayprops    person={person}/>
     <h1 style={{backgroundColor:"blue",width:"400px"}}>This is Array props</h1>
     <Arrayvalue name="Rahul" message="I am a full stack developer "  subject="React JS" discription="Full stack developer"  city="Bhopal"  array={array}/>
+    <h1 style={{backgroundColor:"blue",width:"400px"}}>This is Arraylist rendering</h1>
+    <Arrayrendering/>
+    <h1 style={{backgroundColor:"blue",width:"400px"}}>This is Array object rendering</h1>
+    <Arrayobject/>
+    
     </>
   )
 }
