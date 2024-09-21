@@ -9,6 +9,7 @@ const Condition=()=>{
     return(
         <>
          <h1>This false statemet</h1>
+         <h1>This is condition Component</h1>
         </>
     )
   }
