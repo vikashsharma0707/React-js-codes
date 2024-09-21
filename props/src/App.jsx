@@ -4,6 +4,7 @@ import Arrayprops from "./Components/Arrayprops";
 import Arrayvalue from "./Components/Arrayvalue";
 import Arrayrendering from "./Components/Arrayrendering";
 import Arrayobject from "./Components/Arrayobject";
+import Component2 from "./Components/Component2";
 
 
 const App=()=>{
@@ -30,6 +31,9 @@ const App=()=>{
     <Arrayrendering/>
     <h1 style={{backgroundColor:"blue",width:"400px"}}>This is Array object rendering</h1>
     <Arrayobject/>
+    <h1 style={{backgroundColor:"blue",width:"400px"}}>This is Array  rendering</h1>
+    <Component2/>
+
     
     </>
   )
