@@ -1,5 +1,10 @@
 import Increment from "./Increment";
 import Multiplestate from "./Multiplestate";
+import Handleinput from "./Handleinput";
+import Multipleinput from "./Multiplehandling";
+import Formhandling from "./Formhandling";
+import Arrayrender from "./Arrayrender";
+
 
 
 const App=()=>{
@@ -9,6 +14,11 @@ const App=()=>{
       <Increment/>
       <h1>This is multiple state</h1>
       <Multiplestate/>
+      <Handleinput/>
+      <Multipleinput/>
+      <Formhandling/>
+      <Arrayrender/>
+     
     </>
   )
 }
