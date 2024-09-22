@@ -5,6 +5,7 @@ import Multipleinput from "./Multiplehandling";
 import Formhandling from "./Formhandling";
 import Arrayrender from "./Arrayrender";
 import Derivedstate from "./Derivedstate";
+import Condition from "./Condition";
 
 
 
@@ -21,6 +22,8 @@ const App=()=>{
       <Arrayrender/>
       <h1>This is derived State</h1>
       <Derivedstate/>
+      <h1>This condition for count and add the value of count</h1>
+      <Condition/>
      
     </>
   )
