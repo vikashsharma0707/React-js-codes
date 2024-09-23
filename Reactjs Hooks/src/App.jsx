@@ -8,6 +8,7 @@ import Derivedstate from "./Derivedstate";
 import Condition from "./Condition";
 import Spread from "./Spreadform";
 import Login from "./Loginform";
+import Hello from "./Useeffect/Hello";
 
 
 
@@ -30,6 +31,9 @@ const App=()=>{
       <Spread/>
       <h1>This is login form</h1>
       <Login/>
+      <h1>This is useEffect</h1>
+      <Hello/>
+      
      
     </>
   )
