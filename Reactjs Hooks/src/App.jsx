@@ -10,6 +10,7 @@ import Spread from "./Spreadform";
 import Login from "./Loginform";
 import Hello from "./Useeffect/Hello";
 import Display from "./Useeffect/Display";
+import Title from "./Useeffect/Title";
 
 
 
@@ -36,6 +37,8 @@ const App=()=>{
       <Hello/>
       <h1>This is new date method</h1>
       <Display/>
+      <h1>This is Title changes method</h1>
+      <Title/>
       
       
      
