@@ -6,6 +6,7 @@ import Formhandling from "./Formhandling";
 import Arrayrender from "./Arrayrender";
 import Derivedstate from "./Derivedstate";
 import Condition from "./Condition";
+import Spread from "./Spreadform";
 
 
 
@@ -24,6 +25,8 @@ const App=()=>{
       <Derivedstate/>
       <h1>This condition for count and add the value of count</h1>
       <Condition/>
+      <h1>This is form handling with help of spread operator</h1>
+      <Spread/>
      
     </>
   )
