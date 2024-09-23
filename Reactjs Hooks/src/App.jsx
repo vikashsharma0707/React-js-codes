@@ -7,6 +7,7 @@ import Arrayrender from "./Arrayrender";
 import Derivedstate from "./Derivedstate";
 import Condition from "./Condition";
 import Spread from "./Spreadform";
+import Login from "./Loginform";
 
 
 
@@ -27,6 +28,8 @@ const App=()=>{
       <Condition/>
       <h1>This is form handling with help of spread operator</h1>
       <Spread/>
+      <h1>This is login form</h1>
+      <Login/>
      
     </>
   )
