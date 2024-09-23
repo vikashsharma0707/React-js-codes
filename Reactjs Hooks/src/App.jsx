@@ -9,6 +9,7 @@ import Condition from "./Condition";
 import Spread from "./Spreadform";
 import Login from "./Loginform";
 import Hello from "./Useeffect/Hello";
+import Display from "./Useeffect/Display";
 
 
 
@@ -33,6 +34,9 @@ const App=()=>{
       <Login/>
       <h1>This is useEffect</h1>
       <Hello/>
+      <h1>This is new date method</h1>
+      <Display/>
+      
       
      
     </>
