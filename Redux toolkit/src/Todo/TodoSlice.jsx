@@ -36,6 +36,14 @@ const Todoslie= createSlice({
           state.mytask[i].complete=false;
         }
        }
+    },
+
+    editsave:(state,actions)=>{
+      for(var i=0;i<state.mytask.length;i++){
+        if(state.mytask[i].id==actions.payload.id){
+          state.mytask[i].Task=actions.payload.Task
+        }
+      }
     }
 
     
@@ -45,4 +53,4 @@ const Todoslie= createSlice({
 })
 
 export default Todoslie.reducer;
-export const{addtask,deltask,workct,workunct}=Todoslie.actions;
+export const{addtask,deltask,workct,workunct,editsave}=Todoslie.actions;

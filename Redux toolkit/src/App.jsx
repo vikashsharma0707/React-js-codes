@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { addtask, deltask, workct, workunct } from "./Todo/TodoSlice";
+import { addtask, deltask, editsave, workct, workunct } from "./Todo/TodoSlice";
 
 const App=()=>{
 
@@ -9,10 +9,13 @@ const App=()=>{
   const myval= useSelector((state)=>state.taskadd.mytask)
   const mydis=useDispatch()
   const [val,setval]=useState("");
+  // const [btn,setbtn]=useState(true);
+  const [edt,setedit]=useState("");
   
 
   const Addtask =()=>{
      mydis(addtask({id:Date.now(),Task:val}))
+     setval("")
   }
 
   const recdel=(id)=>{
@@ -28,6 +31,30 @@ const App=()=>{
   const Taskunct=(id)=>{
     mydis(workunct(id))
   }
+
+
+  const Editdata=(id,Task)=>{
+       setval(Task);
+      //  setbtn(false)
+       setedit(id)
+  }
+
+
+  // const Savedata=(myid,mywork)=>{
+  //   mydis(editsave({id:myid,Task:mywork}));
+  //   setbtn(true);
+  //   setval("")
+  // }
+
+  const Savedata = (id, task) => {
+    if (task.trim()) {
+      mydis(editsave({ id, Task: task }));
+      // setbtn(true);
+      setval(""); // Clear the input field after saving
+      setedit("");
+    }
+  };
+
 
 
 
@@ -58,6 +85,12 @@ const App=()=>{
           <button onClick={()=>{Taskunct(key.id)}}>Uncomplete</button>
         </td>
 
+        <td>
+          <button onClick={()=>{Editdata(key.id,key.Task)}}>Edit</button>
+        </td>
+
+
+
         
       </tr>
       </>
@@ -71,7 +104,16 @@ const App=()=>{
     
     <input type="text"  value={val}  onChange={(e)=>{setval(e.target.value)}}/>
     <button   onClick={Addtask}>Add task</button>
-    
+    <button  onClick={()=>{Savedata(edt,val)}}>Editsave</button>
+
+
+{/* {btn? ( <button onClick={Addtask}>
+        Add
+      </button>) :(
+
+        <button onClick={()=>{Savedata(edt, val)}}> Edit Save</button>
+      ) }
+     */}
     <hr    size="4" color="blue"   />
 
     <table>
