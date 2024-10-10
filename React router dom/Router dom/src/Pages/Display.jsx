@@ -1,5 +1,5 @@
 
-import { useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 
 
 
@@ -10,10 +10,12 @@ const Display=()=>{
     return(
         <>
           <h1>This is display page</h1>
+
+        
           
           
-          <button onClick={()=>{navigate("/Address")}}>Address</button>
-          <button onClick={()=>{navigate("Number")}}>Address</button>
+          <button onClick={()=>{navigate("/Addres")}}>Address</button>
+          <button onClick={()=>{navigate("/Number")}}>number</button>
         </>
     )
 }

@@ -6,6 +6,7 @@ import Display from "./Pages/Display";
 import Contact from "./Pages/Contact";
 import Addres from "./Addres";
 import Number from "./Number";
+import Error from "./Pages/Error";
 
 const App = () => {
   return (
@@ -16,12 +17,13 @@ const App = () => {
             <Route index element={<Home />} />
             <Route path="home" element={<Home />} />
             <Route path="about" element={<About />} />
-            <Route path="display" element={<Display />}>
+            <Route path="display" element={<Display />}/>
+           
             <Route path="addres" element={< Addres/>} />
             <Route path="number" element={<Number />} />
             
-            </Route>
             <Route path="contact" element={<Contact />} />
+            <Route path="*" element={<Error/>}/>
           </Route>
         </Routes>
       </BrowserRouter>
